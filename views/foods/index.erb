@@ -1,0 +1,31 @@
+<h2>Menu</h2>
+
+<table>
+<% @foods.each do |food| %>
+<tr>
+
+<td>
+<% food.id %><%= food.name %>
+</td>
+
+<td>
+<% food.id %><%= food.cuisine_type %>
+</td>
+
+<td>
+<% food.id %><%= food.description %>
+</td>
+
+<td>
+<% food.id %><% food.price %>
+</td>
+
+<td>
+<%= food.id %><% food.allergens %>
+</td>
+
+</tr>
+<% end %>
+<a href="/foods/new">Add an item to the menu</a><br>
+<a href="/foods/edit">Edit a menu item</a><br>
+</table>
