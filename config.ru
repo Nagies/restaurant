@@ -2,7 +2,7 @@
 
 # Make sure we load all the gems
 require 'bundler'
-Bundler.require :default
+Bundler.require
 
 # Then connect to the database
   set :database, {
@@ -10,5 +10,5 @@ Bundler.require :default
   host: "localhost"
 }
 
-require './app'
+require './app.rb'
 run EpicRestaurant

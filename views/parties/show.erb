@@ -1,0 +1,32 @@
+<h3>Party</h3>
+<ul>
+  <li>Table Number: <%= @party.table_number %> </li>
+  <li>Number of Guests: <%= @party.number_of_guests %> </li>
+  <li>Paid: <%= @party.paid %> </li>
+</ul>
+<a href="/parties/<%= @party.id %>/edit">Edit this party</a>
+<br>
+
+
+<% @party.orders.each do |order| %>
+	<% order.quantity.times do %>
+	<form action="/orders" method="POST">
+		<input type="hidden" name="_method" value="delete">
+		<input type="submit" value="<%= order.food.name %>">
+		<input type="hidden" name="order_id" value="<%= order.id %>">
+	</form>
+	<% end %> 
+	<% end %> 
+
+<form action="/parties/<%= @party.id %>/order" method="POST">
+  Quantity: <input type="text" name='order[quantity]'>
+  <select name="order[food_id]">
+  <% @foods.each  do |food| %>
+  <option value ="<%= food.id %>"><%= food.name %></option>
+  <% end %>
+  </select>
+  <input type="submit" value="Add">
+</form>
+<br>
+
+<a href="/parties/<%= @party.id %>/receipt">Receipt</a>

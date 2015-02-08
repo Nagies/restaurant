@@ -1,0 +1,14 @@
+<h4>Edit Party's Information</h4>
+<form action="/parties/<%= @party.id %>" method='POST'>
+  Table number: <input type="text" name='party[table_number]' value="<%= @party.table_number %>"><br>
+  Number of Guests: <input type="text" name='party[number_of_guests]' value="<%= @party.number_of_guests %>"><br>
+  Paid: <input type="text" name='party[paid]' value="<%= @party.paid %>"><br>
+  
+  <input type="hidden" name="_method" value="PATCH">
+  <input type="submit" value="Submit changes">
+</form>
+
+<form action="/parties/<%= @party.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete">
+</form>

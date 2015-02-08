@@ -1,3 +1,6 @@
+/*Make a style.scss to use sass
+*/
+
 * {
   margin: 0;
   border: 0;
@@ -6,5 +9,6 @@
 }
 
 body {
-	background: #008B8B;
+	background: #FDF5E6;
 }
+

@@ -17,3 +17,12 @@ paid BOOLEAN,
 created_at TIMESTAMP,
 updated_at TIMESTAMP
 );
+
+CREATE TABLE orders (
+id SERIAL PRIMARY KEY,
+food_id INT,
+party_id INT,
+quantity INT,
+created_at TIMESTAMP,
+updated_at TIMESTAMP
+);

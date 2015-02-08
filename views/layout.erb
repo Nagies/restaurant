@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Food</title>
-	<link rel="stylesheet" href="stylesheets/styles.css">
-</head>
-<body>
-	<%= yield %>
-</body>
+<html>
+
+  <head>
+    <title>My Restaurant App</title>
+  	<link rel="stylesheet" href="stylesheets/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>The Front Porch</h1>
+      <nav>
+        <ul>
+          <li><a href="/foods">Menu</a></li>
+          <li><a href="/parties">Parties</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <%= yield %>
+  </body>
 </html>
