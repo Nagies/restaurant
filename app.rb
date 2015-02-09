@@ -10,12 +10,14 @@ require_relative 'models/food'
 require_relative 'models/parties'
 require_relative 'models/order'
 
+enable :sessions
+
 class EpicRestaurant < Sinatra::Base
   register Sinatra::ActiveRecordExtension
   enable :method_override
 
 get '/' do
-	erb :welcome
+	# erb :welcome
 end
 
 get '/foods' do
@@ -111,8 +113,6 @@ post '/parties/:id/order' do
 	redirect to "/parties"
 end
 
-patch '/orders/:id' do
-end
 
 delete '/orders' do
 	order = Order.find(params['order_id'])
@@ -125,7 +125,6 @@ delete '/orders' do
 	redirect to '/parties'
 end
 
-#Saves the party's receipt data to a file. Displays the content of the receipt. Offer the file for download.
 get '/parties/:id/receipt' do
 	@party = Party.find(params[:id])
 	@foods = @party.foods
@@ -133,12 +132,10 @@ get '/parties/:id/receipt' do
 	erb :'/parties/receipt'
 end
 
-#Marks the party as paid
 patch '/parties/:id/checkout' do
 
 end
 
-# Redirect to default route should all else fail
 get "/*" do
   redirect to("/")
 end

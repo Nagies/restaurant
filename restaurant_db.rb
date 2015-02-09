@@ -5,6 +5,7 @@ cuisine_type VARCHAR(255),
 description text,
 price INT,
 allergens VARCHAR(255),
+customization VARCHAR(255),
 created_at TIMESTAMP,
 updated_at TIMESTAMP
 );

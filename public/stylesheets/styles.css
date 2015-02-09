@@ -1,6 +1,3 @@
-/*Make a style.scss to use sass
-*/
-
 * {
   margin: 0;
   border: 0;
@@ -9,6 +6,13 @@
 }
 
 body {
-	background: #FDF5E6;
+	width: 900px;
+	margin: 0 auto;
+	background: #FFFAF0;
 }
+
+nav {
+	background: #FAEBD7;
+}
+
 

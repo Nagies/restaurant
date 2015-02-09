@@ -6,8 +6,7 @@ Bundler.require
 
 # Then connect to the database
   set :database, {
-  adapter: "postgresql", database: "restaurant_db",
-  host: "localhost"
+  adapter: "postgresql", database: "restaurant_db"
 }
 
 require './app.rb'

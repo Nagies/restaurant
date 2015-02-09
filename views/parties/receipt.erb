@@ -8,7 +8,6 @@
 
 <h5>Subtotal $<%= "%.2f" % @foods.sum(:price)%></h5>
 <h5>Sales Tax $<%= "%.2f" % (@foods.sum(:price) * 0.08875) %></h5>
-<!-- <hr> dashed -->
 <h5>Total $<%= "%.2f" % (@foods.sum(:price) + (@foods.sum(:price) * 0.08875)) %> </h5>
 
 <h3>Suggested Tip</h3>
