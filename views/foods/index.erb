@@ -1,7 +1,9 @@
-<h2>Menu</h2>
+<div class="foods-index">
+<h1>Menu</h1>
 <a href="/foods/new">Add an item to the menu</a><br>
 <ul>
   <% @foods.each do |food| %>
     <li><a href="/foods/<%= food.id %>"><%= food.name %></a></li>
   <% end %>
 </ul>
+</div>

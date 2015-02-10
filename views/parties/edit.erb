@@ -1,4 +1,5 @@
-<h4>Edit Party's Information</h4>
+<div class="parties-edit">
+<h1>Edit Party's Information</h1>
 <form action="/parties/<%= @party.id %>" method='POST'>
   Table number: <input type="text" name='party[table_number]' value="<%= @party.table_number %>"><br>
   Number of Guests: <input type="text" name='party[number_of_guests]' value="<%= @party.number_of_guests %>"><br>
@@ -12,3 +13,4 @@
   <input type="hidden" name="_method" value="DELETE">
   <input type="submit" value="Delete">
 </form>
+</div>

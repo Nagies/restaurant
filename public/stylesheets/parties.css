@@ -1,0 +1,90 @@
+div.parties-index {
+	display: block;
+	margin: auto 0px;
+	padding-left: 150px;
+	padding-top: 10px;
+}
+
+div.parties-index h1 {
+	font-size: 26px;
+}
+
+div.parties-index a {
+	font-size: 22px;
+}
+
+div.parties-new {
+	display: block;
+	margin: auto 0px;
+	padding-left: 150px;
+	padding-top: 10px;
+}
+
+div.parties-new h1 {
+	font-size: 26px;
+}
+
+div.parties-new form {
+	font-size: 22px;
+}
+
+div.parties-show {
+	display: block;
+	margin: auto 0px;
+	padding-left: 150px;
+	padding-top: 10px;
+}
+
+div.parties-show h3 {
+	font-size: 26px;
+}
+
+div.parties-show ul li {
+	font-size: 22px;
+}
+
+div.parties-show a {
+	font-size: 22px;
+}
+
+div.parties-show form {
+	font-size: 22px;
+}
+
+div.parties-edit {
+	display: block;
+	margin: auto 0px;
+	padding-left: 150px;
+	padding-top: 10px;
+}
+
+div.parties-edit h1 {
+	font-size: 26px;
+}
+
+div.parties-edit form {
+	font-size: 22px;
+}
+
+div.parties-receipt {
+	display: block;
+	margin: auto 0px;
+	padding-left: 150px;
+	padding-top: 10px;
+}
+
+div.parties-receipt h1 {
+	font-size: 22px;
+}
+
+div.parties-receipt h1 span {
+	padding-top: 5px;
+	border-style: solid;
+	border-bottom: 1px solid #000;
+}
+
+div.parties-receipt p {
+	font-size: 22px;
+}
+
+

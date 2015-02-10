@@ -1,10 +1,10 @@
+<div class="parties-show">
 <h3>Party</h3>
 <ul>
   <li>Table Number: <%= @party.table_number %> </li>
   <li>Number of Guests: <%= @party.number_of_guests %> </li>
   <li>Paid: <%= @party.paid %> </li>
 </ul>
-<a href="/parties/<%= @party.id %>/edit">Edit this party</a>
 <br>
 
 
@@ -29,4 +29,6 @@
 </form>
 <br>
 
+<a href="/parties/<%= @party.id %>/edit">Edit this party</a><br>
 <a href="/parties/<%= @party.id %>/receipt">Receipt</a>
+</div>

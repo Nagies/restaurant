@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>The Front Porch</title>
     <meta charset="utf-8">
   	<link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/menu.css">
+    <link rel="stylesheet" href="/stylesheets/parties.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <title>The Front Porch</title>
   </head>
   <body>
     <header>
-      <h1><a href="/">The Front Porch</a></h1>
+      <div class="header">
+      <h1 class="tfp">The Front Porch</h1>
+      <div class="front-page">
+       <img src="https://lh5.ggpht.com/aZEj__F4TK5k4QJ1duG8vCYGCUkrfNe9v4DXhhFQMT6uXPoIysocqG8GomNF96CVkgV7wQ=s170"</a>
+      </div>
       <nav>
         <ul>
+          <li><a href="/">Home</a></li>
           <li><a href="/foods">Menu</a></li>
           <li><a href="/parties">Parties</a></li>
         </ul>
       </nav>
+      </div>
     </header>
 
     <%= yield %>

@@ -1,4 +1,5 @@
-<h2>Editing <%= @food.name %></h2>
+<div class="foods-edit">
+<h1>Editing <%= @food.name %></h1>
 
 <form action="/foods/<%= @food.id %>" method='POST'>
   Item: <input type="text" name='food[name]' value="<%= @food.name %>"><br>
@@ -15,3 +16,4 @@
   <input type="hidden" name="_method" value="DELETE">
   <input type="submit" value="Delete Item">
 </form>
+</div>

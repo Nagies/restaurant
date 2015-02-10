@@ -17,7 +17,7 @@ class EpicRestaurant < Sinatra::Base
   enable :method_override
 
 get '/' do
-	# erb :welcome
+	erb :welcome
 end
 
 get '/foods' do
